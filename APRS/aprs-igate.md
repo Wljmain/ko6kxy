@@ -1,7 +1,9 @@
 ---
 layout: page
-title: APRS iGate, Telemetry, and Packet Transmission
-date: August 2025
+title: APRS iGate
+---
+August 2025
+
 ---
 This section is just being used to test some things at the moment
 ## Subheader 1
