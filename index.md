@@ -1,6 +1,6 @@
 ---
 layout: home
-title: KO6KXY Radio Lab
+title: KO6KXY Repository
 ---
 Welcome to my radio project notebook
 
