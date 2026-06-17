@@ -5,4 +5,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 $$\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_{0}}$$
 
-![Flux](Diff-Flux-integration.png)
+![Flux](figures/Diff-Flux-integration.png)
