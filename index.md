@@ -10,4 +10,4 @@ Welcome to my radio project notebook
 
 ## About
 
-This site contains notes on amateur radio, SDR, satellite, and space physics.
+This site contains my notes on amateur radio, SDR, satellite, and space physics.
