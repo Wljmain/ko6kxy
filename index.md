@@ -1,4 +1,3 @@
-# KO6KXY Radio Lab
 
 Welcome to my radio project notebook
 
