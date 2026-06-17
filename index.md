@@ -8,7 +8,7 @@ Welcome to my radio project notebook
 
 - [APRS iGate](APRS/aprs-igate.md)
 - [GOES Station](Satellites/goes-station.md)
-- [Hydrogen Line](Radio-astronomy/hydrogen-line.md)
+- [Hydrogen Line](Radio-Astronomy/hydrogen-line.md)
 
 ## About
 
