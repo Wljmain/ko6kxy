@@ -6,6 +6,7 @@ Welcome to my project notebook
 ## Guides and Logistical Notes
 
 - [Installing Debian and Setting up Linux](Linux/Debian)
+
 ## Projects
 
 - [APRS iGate](APRS/aprs-igate.md)
