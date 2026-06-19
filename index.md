@@ -2,8 +2,10 @@
 layout: home
 title: KO6KXY Repository
 ---
-Welcome to my radio project notebook
+Welcome to my project notebook
+## Guides and Logistical Notes
 
+- [Installing Debian and Setting up Linux](Linux/Debian)
 ## Projects
 
 - [APRS iGate](APRS/aprs-igate.md)
@@ -12,4 +14,4 @@ Welcome to my radio project notebook
 
 ## About
 
-This site contains my notes on amateur radio, SDR, satellite, and space physics.
+This site contains my notes on amateur radio, SDR, satellites, and research.
