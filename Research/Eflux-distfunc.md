@@ -79,7 +79,7 @@ $$\frac{\text{eV}}{\text{cm}^2\,\text{s}\,\text{ster}\,\text{eV}}$$
 These appear in the upper ionosphere, where electrons are **relatively isotropic in pitch angle**. An example is given by Figure 1.
 ![DEF DMSP SSJ/5](figures-research/DEFssj5.png)
 
->Figure 1. DEF from the Defense Meteorological Satellite Program (DMSP) and it's Special Sensor J5 (SSJ/5)
+>Figure 1. Differential energy flux from the Defense Meteorological Satellite Program (DMSP) and it's Special Sensor J5 (SSJ/5)
 
 ## Integrated Fluxes
 **Integrated number flux** is defined as
