@@ -8,7 +8,7 @@ June 2026
 # 1. Installing the OS
 We are going to **flash Debian to a usb stick**. To do this, download [Rufus](https://rufus.ie/en/) on another computer and get whatever version of Debian you need from [the official site](https://www.debian.org/distrib/netinst). When flashing the dongle, you probably want to **use UEFI rather than legacy** (if the computer offers). **Make sure to flash DD**! Not ISO...
 
-![Flashing a usb via Rufus](Linux/figures/Rufus-flash-debian.png)
+![Flashing a usb via Rufus](Rufus-flash-debian.png)
 
 Now, plug the dongle into the actual computer you want to install Debian on and boot from the stick in the BIOS. Then, follow the instructions till you have it installed.
 
