@@ -6,7 +6,11 @@ June 2026
 
 ---
 # 1. Installing the OS
-Flash **Debian amd64** to a usb stick. You probably want to **use UEFI rather than legacy** (if the computer offers). **Make sure to flash DD**! Not ISO...
+We are going to **flash Debian to a usb stick**. To do this, download [Rufus](https://rufus.ie/en/) on another computer and get whatever version of Debian you need from [the official site](https://www.debian.org/distrib/netinst). When flashing the dongle, you probably want to **use UEFI rather than legacy** (if the computer offers). **Make sure to flash DD**! Not ISO...
+
+![Flashing a usb via Rufus](Linux/figures/Rufus-flash-debian.png)
+
+Now, plug the dongle into the actual computer you want to install Debian on and boot from the stick in the BIOS. Then, follow the instructions till you have it installed.
 
 After doing the installation, get sudo privileges:
 ```bash
@@ -23,7 +27,7 @@ ping -c 4 8.8.8.8
 ```bash
 sudo nano /etc/apt/sources.list
 ```
-If that is empty or "cdrom", **replace everything** with:
+If that is empty or "cdrom", **replace everything** with
 ```bash
 deb http://deb.debian.org/debian trixie main contrib non-free-firmware
 
@@ -31,7 +35,7 @@ deb http://deb.debian.org/debian trixie-updates main contrib non-free-firmware
 
 deb http://security.debian.org/debian-security trixie-security main contrib non-free-firmware
 ```
-Now **update the package lists**
+Now **update the package lists**:
 ```bash
 sudo apt update
 sudo apt upgrade -y
@@ -60,38 +64,38 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 sudo systemctl status ssh
 ```
-Verify Avahi works
+Verify Avahi works:
 ```bash
 systemctl status avahi-daemon
 ```
-Set up ssh with a host name
+Set up ssh with a host name:
 ```bash
 sudo hostname set-hostname name
 ```
-run ssh
+run ssh:
 ```bash
 ssh username@hostname.local
 ```
 # 3. Set up a Python Environment
-Create the VE
+Create the VE:
 ```bash
 mkdir -p ~/venvs
 
 python3 -m venv ~/venvs/main
 ```
-activate it
+activate it:
 ```bash
 source ~/venvs/main/bin/activate
 ```
-upgrade pip
+upgrade pip:
 ```bash
 pip install --upgrade pip
 ```
-install scientific libraries
+install scientific libraries:
 ```bash
 pip install numpy scipy matplotlib pandas jupyterlab notebook
 ```
-Set up Jupyter notebook (remotely!)
+Set up Jupyter notebook (remotely!):
 ```bash
 source ~/venvs/main/bin/activate
 
@@ -111,7 +115,7 @@ We're going to get the **full XFCE desktop** since it's lightweight and easy to 
 ```bash
 sudo apt install xfce4 xfce4-goodies -y
 ```
-Now we're going to set up a login screen, lets get **lightdm**
+Now we're going to set up a login screen, lets get **lightdm**:
 ```bash
 sudo apt install lightdm -y
 ```
