@@ -10,7 +10,7 @@ These are my brief notes on the theory behind distribution functions, energy/num
 # Distribution Functions
 A **distribution function** describes particle distribution in phase space
 
-$$f(\mathbf{r},\mathbf{v},\mathbf{t})$$
+$$f(\mathbf{r},\mathbf{v},t)$$
 
 and has units of $\text{m}^{-3} (\text{m/s})^{-3} = \text{m}^{-6}\text{s}^3$. If location is fixed, 
 
