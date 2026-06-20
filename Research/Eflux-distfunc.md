@@ -76,10 +76,10 @@ $$\frac{\text{eV}}{\text{cm}^2\,\text{s}\,\text{ster}\,\text{eV}}$$
 
 >This is the energy arriving per unit area, per time, per solid angle, per energy
 
-These appear in the upper ionosphere, where electrons are **relatively isotropic in pitch angle**. An example is given by Figure 1.
+Differential energy flux measurements are commonly used to characterize **precipitating particle populations in the upper ionosphere**. An example is given by Figure 1.
 ![DEF DMSP SSJ/5](figures-research/DEFssj5.png)
 
->Figure 1. Differential energy flux from the Defense Meteorological Satellite Program (DMSP) and it's Special Sensor J5 (SSJ/5)
+>Figure 1. Differential energy flux from the Defense Meteorological Satellite Program (DMSP) and its Special Sensor J5 (SSJ/5)
 
 ## Integrated Fluxes
 **Integrated number flux** is defined as
@@ -104,9 +104,9 @@ If integrated over all energy channels, they are called total energy flux. An ex
 >Figure 2. Plots of a DMSP polar pass. The center plot shows total energy flux. Vertical dashed lines are from an auroral oval detection algorithm by Kilcommons et al. (2017).
 
 ## Pitch Angle Distributions (PADs)
-Now, consider $f$ as **both a function of energy and pitch angle**. Here,
+Now, consider $f$ as **both a function of speed and pitch angle**. Here,
 
-$$f(E,\alpha) \qquad J(E,\alpha)$$
+$$j(E,\alpha)$$
 
 Recall that pitch angle is just the angle between **particle velocity** and the **local magnetic field**:
 
@@ -129,7 +129,7 @@ Note that there is a factor of $\sin \alpha$ that comes from $d\Omega =\sin \alp
 # Discrete Energy and Pitch Angle Bins 
 Real instruments take measurements in **finite bins** rather than recording continuous functions. Thus, continuous integrals become **finite sums**. For instance, **integrated energy flux** can be approximated as 
 
-$$Q \approx \sum_{i} \Phi_{i}\,\Delta E_{i}$$
+$$Q \approx \sum_{i} E_{i}j_{i}\,\Delta E_{i}$$
 
 A simple python implementation is
 
