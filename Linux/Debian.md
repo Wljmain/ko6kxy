@@ -10,19 +10,23 @@ We are going to **flash Debian to a usb stick**. To do this, download [Rufus](ht
 
 ![Flashing a usb via Rufus](figures-linux/Rufus-flash-debian.png)
 
-Now, plug the dongle into the actual computer you want to install Debian on and boot from the stick in the BIOS. Then, follow the instructions till you have it installed.
+Now, **plug the dongle** into the actual computer you want to install Debian on and **boot from the stick in the BIOS**. Then, follow the instructions till you have it installed.
 
-After doing the installation, get sudo privileges:
+After doing the installation, **get sudo privileges**:
 ```bash
 Su - 
 
 adduser your_username sudo
 ```
 # 2. Internet Connection
-Next, get wifi up and running. You likely need to **plug in ethernet** to start. If the computer doesn't have a wifi card, **use a usb stick**. Verify that you are connected by:
+Next, get wifi up and running. You likely need to **plug in ethernet** to start. If the computer doesn't have a wifi card, **use a usb stick**. Verify that you are connected via pinging **Google Public DNS**:
 ```bash
 ping -c 4 8.8.8.8
 ```
+This should send back something like:
+
+![Pinging Google Public DNS](figures-linux/8.8.8.8-ping.png)
+
 **Make sure APT is working**, this is how we are going to install everything (including networking tools!)
 ```bash
 sudo nano /etc/apt/sources.list
