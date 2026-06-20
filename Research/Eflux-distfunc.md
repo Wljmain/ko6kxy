@@ -78,7 +78,9 @@ $$\frac{\text{eV}}{\text{cm}^2\,\text{s}\,\text{ster}\,\text{eV}}$$
 
 These appear in the upper ionosphere, where electrons are **relatively isotropic in pitch angle**. An example is given by Figure 1.
 ![DEF DMSP SSJ/5](figures-research/DEFssj5.png)
+
 >Figure 1. DEF from the Defense Meteorological Satellite Program (DMSP) and it's Special Sensor J5 (SSJ/5)
+
 ## Integrated Fluxes
 **Integrated number flux** is defined as
 
@@ -98,7 +100,9 @@ $$\frac{\text{eV}}{\text{cm}^2\,\text{s}\,\text{ster}}$$
 
 If integrated over all energy channels, they are called total energy flux. An example is given by Figure 2.
 ![Polar pass DMSP](figures-research/polarpassssj5.png)
+
 >Figure 2. Plots of a DMSP polar pass. The center plot shows total energy flux. Vertical dashed lines are from an auroral oval detection algorithm by Kilcommons et al. (2017).
+
 ## Pitch Angle Distributions (PADs)
 Now, consider $f$ as **both a function of energy and pitch angle**. Here,
 
@@ -110,6 +114,7 @@ $$\alpha = \cos^{-1} \left( \frac{\mathbf{v}\cdot\mathbf{B}}{|v||B|} \right)$$
 
 This is the case in the solar wind, where electrons have three distinct populations: **core** (<50 eV), **halo**, and **strahl** (~70–1000 eV). Strahl in particular is highly field-aligned. An example PAD is given by Figure 3. 
 ![SWE 116.1eV PAD](figures-research/pad116eVswe.png)
+
 > Figure 3. PAD for 116.1 eV from the Wind spacecraft's Solar Wind Experiment.
 
 By **integrating over a range of pitch angles**, we arrive at our non-pitch angle dependent variables:
