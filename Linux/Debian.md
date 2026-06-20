@@ -5,6 +5,8 @@ title: Installing Debian and Setting up Linux
 June 2026
 
 ---
+# Introduction
+These are notes I have written up that detail the process of installing and setting up Debian for amateur radio use.
 # 1. Installing the OS
 We are going to **flash Debian to a usb stick**. To do this, download [Rufus](https://rufus.ie/en/) on another computer and get whatever version of Debian you need from [the official site](https://www.debian.org/distrib/netinst). When flashing the dongle, you probably want to **use UEFI rather than legacy** (if the computer offers). **Make sure to flash DD**! Not ISO...
 
