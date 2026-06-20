@@ -8,7 +8,7 @@ June 2026
 # 1. Installing the OS
 We are going to **flash Debian to a usb stick**. To do this, download [Rufus](https://rufus.ie/en/) on another computer and get whatever version of Debian you need from [the official site](https://www.debian.org/distrib/netinst). When flashing the dongle, you probably want to **use UEFI rather than legacy** (if the computer offers). **Make sure to flash DD**! Not ISO...
 
-![Flashing a usb via Rufus](Rufus-flash-debian.png)
+![Flashing a usb via Rufus](figures-linux/Rufus-flash-debian.png)
 
 Now, plug the dongle into the actual computer you want to install Debian on and boot from the stick in the BIOS. Then, follow the instructions till you have it installed.
 
@@ -76,7 +76,7 @@ run ssh:
 ```bash
 ssh username@hostname.local
 ```
-# 3. Set up a Python Environment
+# 4. Set up a Python Environment
 Create the VE:
 ```bash
 mkdir -p ~/venvs
@@ -105,12 +105,35 @@ Now you can ssh from another computer and type in
 ```bash
 http://hostname:portnumber/lab?token=...
 ```
-# 4. Set up SDR tools
+# 5. Set up SDR tools
 Get the basics:
 ```bash
 sudo apt install rtl-sdr gqrx-sdr rtl-433 direwolf gpredict fldigi, wsjtx, cqrlog, satdump, qsstv, chirp, libhamlib-utils, libhamlib-dev, gnuradio
 ```
-# 5. Get a desktop environment (XFCE in this case!)
+SDR++ is going to require a bit more. First, we need to **install dependencies**:
+```bash
+sudo apt install pkg-config libfftw3-dev libglfw3-dev libvolk2-dev libzstd-dev libairspy-dev libairspyhf-dev libhackrf-dev librtlsdr-dev libsoapysdr-dev libiio-dev libad9361-dev libcodec2-dev
+```
+Clone the git repo create a build directory:
+```bash
+git clone https://github.com/AlexandreRouma/SDRPlusPlus.git
+
+cd SDRPlusPlus
+mkdir build
+cd build
+```
+Set it up with cmake (if cmake is not installed, it's an easy `sudo apt install cmake`) and install:
+```bash
+cmake ..
+
+sudo make install
+sudo ldconfig
+```
+Run it with
+```bash
+sdrpp
+```
+# 6. Get a desktop environment (XFCE in this case!)
 We're going to get the **full XFCE desktop** since it's lightweight and easy to use. Run this to get XFCE desktop, panel, file manager, settings tools, and some extra plugins/utilities:
 ```bash
 sudo apt install xfce4 xfce4-goodies -y
