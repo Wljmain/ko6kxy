@@ -131,23 +131,11 @@ Real instruments take measurements in **finite bins** rather than recording cont
 
 $$Q \approx \sum_{i} E_{i}j_{i}\,\Delta E_{i}$$
 
-A simple python implementation is
-
-```python
-Q = np.trapz(j,E)
-```
-
 For **integrating out pitch angle ranges**,
 
 $$j(E_{i})\approx \sum_{j}j(E_{i},\alpha_{j}) \sin \alpha_{j}\Delta \alpha_{j}$$
 
-and
-
-```python
-j = np.trapz(j * np.sin(alpha), alpha)
-```
-
-For a more thorough implementation of finite sums for DMSP data products, see Hardy et al., (1985).
+For a thorough implementation of finite sums for DMSP data products, see Hardy et al., (1985).
 # References
 Hardy, D. A., Gussenhoven, M. S., & Holeman, E. (1985). A statistical model of auroral electron precipitation. _Journal of Geophysical Research: Space Physics_, _90_(A5), 4229–4248. [https://doi.org/10.1029/JA090iA05p04229](https://doi.org/10.1029/JA090iA05p04229)
 
