@@ -132,8 +132,7 @@ Real instruments take measurements in **finite bins** rather than recording cont
 $$Q \approx \sum_{i} E_{i}j_{i}\,\Delta E_{i}$$
 
 For **integrating out pitch angle ranges**,
-
-$$j(E_{i})\approx \sum_{j}j(E_{i},\alpha_{j}) \sin \alpha_{j}\Delta \alpha_{j}$$
+$$j(E_{i})\approx 2\pi\sum_{j}j(E_{i},\alpha_{j}) \sin \alpha_{j}\Delta \alpha_{j}$$
 
 For a thorough implementation of finite sums for DMSP data products, see Hardy et al., (1985).
 # References
